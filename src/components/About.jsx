@@ -8,11 +8,11 @@ import {
   Zap, 
   Terminal, 
   Globe, 
-  CheckCircle2,
-  FileCheck
+  Sparkles,
+  CheckCircle2
 } from 'lucide-react';
 
-export default function About({ onOpenCvModal }) {
+export default function About() {
   const iconMap = {
     ShieldCheck: ShieldCheck,
     Zap: Zap,
@@ -21,148 +21,132 @@ export default function About({ onOpenCvModal }) {
   };
 
   return (
-    <section id="about" className="py-20 bg-slate-900/40 relative border-t border-slate-900">
+    <section id="about" className="py-16 bg-slate-900/30 border-t border-slate-900 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-purple-950/60 text-purple-400 border border-purple-800/40 mb-3">
+        <div className="text-center max-w-2xl mx-auto mb-12">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-purple-950/60 text-purple-400 border border-purple-800/40 mb-2">
             <span>ABOUT ME</span>
           </div>
-          <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-            Proactive Mindset, Practical Results, Zero Micromanagement
+          <h2 className="font-display text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+            Tech-Savvy Foundation & Proactive Execution
           </h2>
-          <p className="mt-4 text-base text-slate-300 leading-relaxed">
-            Bridging technical IT fundamentals with modern AI automation and e-commerce execution to give business owners back their valuable time.
+          <p className="mt-2 text-xs sm:text-sm text-slate-300">
+            Combining IT expertise with real-world entrepreneurial experience in e-commerce and AI media.
           </p>
         </div>
 
-        {/* Top Split: Professional Summary & Career Objective */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        {/* 2-Column Clean Cards */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
           
-          {/* Main Bio Card */}
-          <div className="lg:col-span-7 rounded-2xl bg-slate-900/80 border border-slate-800/90 p-7 sm:p-8 flex flex-col justify-between backdrop-blur-sm">
+          {/* Left Column: Background & Career Objective */}
+          <div className="lg:col-span-7 flex flex-col justify-between p-6 sm:p-7 rounded-2xl bg-slate-900/70 border border-slate-800 hover:border-purple-500/30 transition-all">
             <div>
-              <div className="flex items-center gap-2 text-purple-400 text-xs font-bold uppercase tracking-wider mb-3">
-                <FileCheck className="w-4 h-4" />
-                <span>Professional Background & Philosophy</span>
-              </div>
-              <h3 className="font-display text-2xl font-bold text-white mb-4">
-                Self-Taught, Tech-Savvy & Ready to Drive Growth
+              <span className="text-[11px] font-bold uppercase tracking-wider text-purple-400 block mb-2">
+                Proven Track Record
+              </span>
+              <h3 className="font-display text-xl font-bold text-white mb-3">
+                Hands-on Operator, Not Just an Assistant
               </h3>
-              <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
-                As a graduate in <strong className="text-white">BS Information Technology</strong> from GCWUF, I combine a structured technical mindset with real-world digital experience. Rather than relying on theoretical knowledge alone, I put my skills to work by independently founding and running an e-commerce brand (<strong className="text-purple-300">Siyah Official</strong>) and developing an AI-driven short-form media channel (<strong className="text-pink-300">MazaaqiyaShortsTV</strong>).
+              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">
+                With a <strong className="text-white">BS in Information Technology</strong> from GCWUF, I independently built and launched handmade accessories brand <strong className="text-purple-300">Siyah Official</strong> (beaded bracelets & keychains) and AI comedy channel <strong className="text-pink-300">MazaaqiyaShortsTV</strong>.
               </p>
-              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-                Whether it's managing complex spreadsheets, generating conversion-oriented product descriptions, or producing high-retention video content with AI tools like ChatGPT, I treat every task with deep ownership, strict data privacy, and attention to detail.
-              </p>
+              
+              {/* 3 bullet highlights */}
+              <div className="space-y-2 text-xs text-slate-300 mb-5">
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
+                  <span>Self-taught, disciplined, and capable of working completely independently.</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
+                  <span>Expert in using ChatGPT to script viral comedy shorts and product SEO listings.</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
+                  <span>Proficient in Google Workspace, MS Office spreadsheets, and web research.</span>
+                </div>
+              </div>
             </div>
 
-            {/* Quick badges */}
-            <div className="mt-6 pt-6 border-t border-slate-800 flex flex-wrap gap-2 text-xs font-medium">
-              <span className="px-3 py-1 rounded-lg bg-slate-800 text-slate-300 border border-slate-700">
-                100% Remote Disciplined
+            {/* Objective Quote Box */}
+            <div className="p-3.5 rounded-xl bg-purple-950/30 border border-purple-800/40 text-xs">
+              <span className="font-bold text-pink-300 text-[11px] uppercase tracking-wider block mb-1">
+                Career Goal
               </span>
-              <span className="px-3 py-1 rounded-lg bg-slate-800 text-slate-300 border border-slate-700">
-                Data Organization
-              </span>
-              <span className="px-3 py-1 rounded-lg bg-slate-800 text-slate-300 border border-slate-700">
-                AI Prompt Engineering
-              </span>
-              <span className="px-3 py-1 rounded-lg bg-slate-800 text-slate-300 border border-slate-700">
-                Canva Visuals
-              </span>
-              <span className="px-3 py-1 rounded-lg bg-slate-800 text-slate-300 border border-slate-700">
-                SEO Product Copy
-              </span>
+              <p className="text-slate-200 italic">
+                "{personalInfo.careerObjective}"
+              </p>
             </div>
           </div>
 
-          {/* Right Column: Career Objective & Education/Languages */}
-          <div className="lg:col-span-5 flex flex-col gap-6">
+          {/* Right Column: Education & Languages Cards */}
+          <div className="lg:col-span-5 flex flex-col gap-4">
             
-            {/* Career Objective Box */}
-            <div className="rounded-2xl bg-gradient-to-br from-purple-950/40 via-slate-900/80 to-slate-900 border border-purple-500/20 p-6 backdrop-blur-sm">
-              <div className="flex items-center gap-2 text-pink-400 text-xs font-bold uppercase tracking-wider mb-2">
-                <Target className="w-4 h-4" />
-                <span>Career Objective</span>
-              </div>
-              <blockquote className="text-slate-200 text-sm sm:text-base italic leading-relaxed">
-                "{personalInfo.careerObjective}"
-              </blockquote>
-            </div>
-
             {/* Education Box */}
-            <div className="rounded-2xl bg-slate-900/80 border border-slate-800/90 p-6 backdrop-blur-sm">
-              <div className="flex items-center gap-2 text-indigo-400 text-xs font-bold uppercase tracking-wider mb-3">
-                <GraduationCap className="w-4 h-4" />
-                <span>Formal Education</span>
+            <div className="p-5 rounded-2xl bg-slate-900/70 border border-slate-800 hover:border-indigo-500/30 transition-all flex items-start gap-4">
+              <div className="p-2.5 rounded-xl bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
+                <GraduationCap className="w-5 h-5" />
               </div>
-              <h4 className="font-bold text-white text-base">
-                {education.degree}
-              </h4>
-              <p className="text-purple-300 text-sm font-medium mt-0.5">
-                {education.institution}
-              </p>
-              <p className="text-slate-400 text-xs mt-1">
-                {education.location}
-              </p>
-              <p className="text-slate-300 text-xs mt-3 leading-relaxed">
-                {education.description}
-              </p>
+              <div>
+                <span className="text-[10px] font-bold uppercase tracking-wider text-indigo-400">Education</span>
+                <h4 className="font-bold text-white text-sm mt-0.5">{education.degree}</h4>
+                <p className="text-purple-300 text-xs">{education.institution}</p>
+                <p className="text-slate-400 text-[11px]">{education.location}</p>
+              </div>
             </div>
 
             {/* Languages Box */}
-            <div className="rounded-2xl bg-slate-900/80 border border-slate-800/90 p-6 backdrop-blur-sm">
-              <div className="flex items-center gap-2 text-emerald-400 text-xs font-bold uppercase tracking-wider mb-3">
-                <LanguagesIcon className="w-4 h-4" />
-                <span>Languages</span>
+            <div className="p-5 rounded-2xl bg-slate-900/70 border border-slate-800 hover:border-emerald-500/30 transition-all flex items-start gap-4">
+              <div className="p-2.5 rounded-xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                <LanguagesIcon className="w-5 h-5" />
               </div>
-              <div className="space-y-3">
-                {languages.map((lang, idx) => (
-                  <div key={idx} className="flex items-center justify-between text-xs">
-                    <div>
-                      <span className="font-semibold text-white text-sm">{lang.language}</span>
-                      <span className="text-slate-400 ml-2">({lang.proficiency})</span>
+              <div className="flex-1">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-400">Languages</span>
+                <div className="mt-1 space-y-1.5 text-xs">
+                  {languages.map((lang, idx) => (
+                    <div key={idx} className="flex justify-between items-center">
+                      <span className="font-semibold text-white">{lang.language}</span>
+                      <span className="text-slate-400 text-[11px]">({lang.proficiency})</span>
                     </div>
-                    <span className="px-2 py-0.5 rounded bg-emerald-950/80 border border-emerald-800/40 text-emerald-300 font-semibold text-[11px]">
-                      Fluent
-                    </span>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
+            </div>
+
+            {/* Availability Box */}
+            <div className="p-4 rounded-2xl bg-slate-950/80 border border-slate-800 text-xs flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span className="text-slate-300 font-medium">Remote Work Status</span>
+              </div>
+              <span className="text-emerald-400 font-bold text-[11px]">
+                Immediate Start
+              </span>
             </div>
 
           </div>
 
         </div>
 
-        {/* Why Work With Me (Value Propositions) */}
-        <div className="mt-16">
-          <h3 className="font-display text-xl sm:text-2xl font-bold text-white text-center mb-8">
-            Why Business Owners Choose to Work With Me
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {valuePropositions.map((item, idx) => {
-              const IconComp = iconMap[item.icon] || ShieldCheck;
-              return (
-                <div 
-                  key={idx}
-                  className="rounded-2xl bg-slate-900/70 border border-slate-800 p-6 flex flex-col hover:border-purple-500/40 hover:-translate-y-1 transition-all duration-200"
-                >
-                  <div className="w-10 h-10 rounded-xl bg-purple-600/10 border border-purple-500/20 text-purple-400 flex items-center justify-center mb-4">
-                    <IconComp className="w-5 h-5" />
-                  </div>
-                  <h4 className="font-bold text-white text-base mb-2">
-                    {item.title}
-                  </h4>
-                  <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                    {item.desc}
-                  </p>
+        {/* 4 Value Pillars (Ultra Concise) */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
+          {valuePropositions.map((item, idx) => {
+            const Icon = iconMap[item.icon] || ShieldCheck;
+            return (
+              <div 
+                key={idx}
+                className="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 hover:border-purple-500/40 hover:-translate-y-1 transition-all"
+              >
+                <div className="w-8 h-8 rounded-lg bg-purple-600/10 text-purple-400 flex items-center justify-center mb-2.5">
+                  <Icon className="w-4 h-4" />
                 </div>
-              );
-            })}
-          </div>
+                <h4 className="font-bold text-white text-xs sm:text-sm mb-1">{item.title}</h4>
+                <p className="text-[11px] text-slate-400 leading-relaxed">{item.desc}</p>
+              </div>
+            );
+          })}
         </div>
 
       </div>

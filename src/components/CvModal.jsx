@@ -99,7 +99,7 @@ export default function CvModal({ isOpen, onClose }) {
                   Professional Summary
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed text-justify">
-                  Proactive Virtual Assistant & AI Content Specialist with proven hands-on experience building and scaling digital platforms from the ground up. I leverage advanced AI tools, strategic social media planning, and e-commerce optimization to drive organic growth. Having successfully launched an e-commerce brand (<strong>Siyah Official</strong>) and an AI-driven YouTube channel (<strong>MazaaqiyaShortsTV</strong>), I offer the practical expertise, self-discipline, and digital fluency needed to streamline your daily operations and boost online presence.
+                  Proactive Virtual Assistant & AI Content Specialist with proven hands-on experience building and scaling digital platforms from the ground up. I leverage advanced AI tools, strategic social media planning, and e-commerce optimization to drive organic growth. Having successfully launched a handmade accessories brand (<strong>Siyah Official</strong> — beaded bracelets & keychains) and an AI-driven comedy YouTube channel (<strong>MazaaqiyaShortsTV</strong>), I offer the practical expertise, self-discipline, and digital fluency needed to streamline your daily operations and boost online presence.
                 </p>
               </div>
 
@@ -115,11 +115,11 @@ export default function CvModal({ isOpen, onClose }) {
                 {/* Point 1 */}
                 <div className="mb-4">
                   <h3 className="text-xs sm:text-sm font-bold text-slate-900 mb-1">
-                    1. AI Content Creation & Social Media Strategy
+                    1. AI Comedy Content & Short-Form Video Strategy
                   </h3>
                   <ul className="text-xs text-slate-700 space-y-1.5 pl-4 list-disc">
                     <li>
-                      <strong>Advanced AI Utilization:</strong> Expert in using ChatGPT and AI video/voice generators to script, design, and animate high-retention short-form videos (as seen on my YouTube channel).
+                      <strong>Advanced AI Utilization:</strong> Expert in using ChatGPT and AI voice generators to script comedic dialogues, generate funny character voices, and animate high-retention short-form videos (as seen on my MazaaqiyaShortsTV comedy channel).
                     </li>
                     <li>
                       <strong>End-to-End Social Management:</strong> Independently develop content calendars, design visuals (Canva), write engaging captions, and execute targeted hashtag strategies to maximize reach.
@@ -130,11 +130,11 @@ export default function CvModal({ isOpen, onClose }) {
                 {/* Point 2 */}
                 <div className="mb-4">
                   <h3 className="text-xs sm:text-sm font-bold text-slate-900 mb-1">
-                    2. E-Commerce & Product Optimization
+                    2. E-Commerce & Product Optimization (Handmade Accessories)
                   </h3>
                   <ul className="text-xs text-slate-700 space-y-1.5 pl-4 list-disc">
                     <li>
-                      <strong>Listing & SEO Operations:</strong> Craft SEO-friendly product titles and conversion-focused descriptions that highlight key features for buyers.
+                      <strong>Listing & SEO Operations:</strong> Craft SEO-friendly product titles and conversion-focused descriptions for handcrafted beaded bracelets, keychains, and custom accessories that highlight key features for buyers.
                     </li>
                     <li>
                       <strong>Market Intelligence:</strong> Conduct ongoing keyword, trend, and competitor research to align digital content and products with active consumer demand.

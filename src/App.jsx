@@ -12,12 +12,17 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import CvModal from './components/CvModal';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
+import Preloader from './components/Preloader';
 
 export default function App() {
   const [isCvModalOpen, setIsCvModalOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col font-sans selection:bg-purple-600 selection:text-white">
+      {/* Starting Animated Loader */}
+      {isLoading && <Preloader onComplete={() => setIsLoading(false)} />}
+
       {/* Navigation */}
       <Navbar onOpenCvModal={() => setIsCvModalOpen(true)} />
 

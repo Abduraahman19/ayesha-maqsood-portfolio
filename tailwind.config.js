@@ -33,11 +33,6 @@ export default {
           800: '#5b21b6',
           900: '#4c1d95',
           950: '#2e1065',
-        },
-        navy: {
-          850: '#0f172a',
-          900: '#0b1120',
-          950: '#070b14',
         }
       },
       fontFamily: {
@@ -45,13 +40,47 @@ export default {
         display: ['Outfit', 'Plus Jakarta Sans', 'sans-serif'],
       },
       animation: {
-        'fade-in': 'fadeIn 0.5s ease-out forwards',
-        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'fade-in': 'fadeIn 0.4s ease-out forwards',
+        'fade-up': 'fadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+        'fade-in-down': 'fadeInDown 0.5s ease-out forwards',
+        'float-slow': 'float 6s ease-in-out infinite',
+        'float-reverse': 'floatReverse 7s ease-in-out infinite',
+        'pulse-glow': 'pulseGlow 3s ease-in-out infinite',
+        'shimmer': 'shimmer 2.5s linear infinite',
+        'gradient-x': 'gradientX 6s ease infinite',
       },
       keyframes: {
         fadeIn: {
-          '0%': { opacity: '0', transform: 'translateY(10px)' },
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        fadeUp: {
+          '0%': { opacity: '0', transform: 'translateY(24px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        fadeInDown: {
+          '0%': { opacity: '0', transform: 'translateY(-16px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-12px)' },
+        },
+        floatReverse: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(10px)' },
+        },
+        pulseGlow: {
+          '0%, 100%': { opacity: '0.4', transform: 'scale(1)' },
+          '50%': { opacity: '0.8', transform: 'scale(1.05)' },
+        },
+        shimmer: {
+          '0%': { backgroundPosition: '-200% 0' },
+          '100%': { backgroundPosition: '200% 0' },
+        },
+        gradientX: {
+          '0%, 100%': { 'background-size': '200% 200%', 'background-position': 'left center' },
+          '50%': { 'background-size': '200% 200%', 'background-position': 'right center' },
         }
       }
     },
